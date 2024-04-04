@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1501AEB22BBDC6D6003EB5EF /* CellularFillingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501AEB12BBDC6D6003EB5EF /* CellularFillingApp.swift */; };
-		1501AEB42BBDC6D6003EB5EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501AEB32BBDC6D6003EB5EF /* ContentView.swift */; };
+		1501AEB42BBDC6D6003EB5EF /* NewWorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501AEB32BBDC6D6003EB5EF /* NewWorldView.swift */; };
 		1501AEB62BBDC6D9003EB5EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1501AEB52BBDC6D9003EB5EF /* Assets.xcassets */; };
 		1501AEB92BBDC6D9003EB5EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1501AEB82BBDC6D9003EB5EF /* Preview Assets.xcassets */; };
+		1501AEC72BBEAE8C003EB5EF /* NewWorldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501AEC62BBEAE8B003EB5EF /* NewWorldViewModel.swift */; };
+		1501AECA2BBEAEDD003EB5EF /* NewWorldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501AEC92BBEAEDD003EB5EF /* NewWorldCell.swift */; };
+		1501AECC2BBEB583003EB5EF /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501AECB2BBEB583003EB5EF /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1501AEAE2BBDC6D6003EB5EF /* CellularFilling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CellularFilling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1501AEB12BBDC6D6003EB5EF /* CellularFillingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularFillingApp.swift; sourceTree = "<group>"; };
-		1501AEB32BBDC6D6003EB5EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1501AEB32BBDC6D6003EB5EF /* NewWorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorldView.swift; sourceTree = "<group>"; };
 		1501AEB52BBDC6D9003EB5EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1501AEB82BBDC6D9003EB5EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1501AEC62BBEAE8B003EB5EF /* NewWorldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorldViewModel.swift; sourceTree = "<group>"; };
+		1501AEC92BBEAEDD003EB5EF /* NewWorldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorldCell.swift; sourceTree = "<group>"; };
+		1501AECB2BBEB583003EB5EF /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +57,9 @@
 		1501AEB02BBDC6D6003EB5EF /* CellularFilling */ = {
 			isa = PBXGroup;
 			children = (
-				1501AEB12BBDC6D6003EB5EF /* CellularFillingApp.swift */,
-				1501AEB32BBDC6D6003EB5EF /* ContentView.swift */,
-				1501AEB52BBDC6D9003EB5EF /* Assets.xcassets */,
+				1501AEC02BBEAD39003EB5EF /* Resources */,
+				1501AEC42BBEAE5F003EB5EF /* Models */,
+				1501AEC12BBEAD4B003EB5EF /* Core */,
 				1501AEB72BBDC6D9003EB5EF /* Preview Content */,
 			);
 			path = CellularFilling;
@@ -65,6 +71,57 @@
 				1501AEB82BBDC6D9003EB5EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1501AEC02BBEAD39003EB5EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1501AEB12BBDC6D6003EB5EF /* CellularFillingApp.swift */,
+				1501AEB52BBDC6D9003EB5EF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1501AEC12BBEAD4B003EB5EF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1501AEC52BBEAE6D003EB5EF /* NewWorld Screen */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1501AEC22BBEAE51003EB5EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1501AEB32BBDC6D6003EB5EF /* NewWorldView.swift */,
+				1501AEC92BBEAEDD003EB5EF /* NewWorldCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1501AEC32BBEAE59003EB5EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1501AEC62BBEAE8B003EB5EF /* NewWorldViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1501AEC42BBEAE5F003EB5EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1501AECB2BBEB583003EB5EF /* Cell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1501AEC52BBEAE6D003EB5EF /* NewWorld Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1501AEC22BBEAE51003EB5EF /* View */,
+				1501AEC32BBEAE59003EB5EF /* ViewModel */,
+			);
+			path = "NewWorld Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1501AEB42BBDC6D6003EB5EF /* ContentView.swift in Sources */,
+				1501AEB42BBDC6D6003EB5EF /* NewWorldView.swift in Sources */,
+				1501AEC72BBEAE8C003EB5EF /* NewWorldViewModel.swift in Sources */,
+				1501AECC2BBEB583003EB5EF /* Cell.swift in Sources */,
 				1501AEB22BBDC6D6003EB5EF /* CellularFillingApp.swift in Sources */,
+				1501AECA2BBEAEDD003EB5EF /* NewWorldCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +338,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +348,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = shurup.CellularFilling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,8 +372,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +382,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = shurup.CellularFilling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
