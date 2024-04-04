@@ -34,7 +34,7 @@ private extension NewWorldView {
     }
     
     var title: some View {
-        Text("Клеточное наполнение")
+        Text(AppStrings.newWorldTitle)
             .font(.title2)
             .bold()
             .foregroundStyle(.white)

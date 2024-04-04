@@ -5,25 +5,25 @@ enum Cell {
     
     var icon: String {
         switch self {
-        case .dead: "deathIcon"
-        case .alive: "liveIcon"
-        case .life: "lifeIcon"
+        case .dead: return AppStrings.deathIconName
+        case .alive: return AppStrings.liveIconName
+        case .life: return AppStrings.lifeIconName
         }
     }
     
     var title: String {
         switch self {
-        case .dead: "Мертвая"
-        case .alive: "Живая"
-        case .life: "Жизнь"
+        case .dead: return AppStrings.cellTitleDead
+        case .alive: return AppStrings.cellTitleAlive
+        case .life: return AppStrings.cellTitleLife
         }
     }
     
     var subtitle: String {
         switch self {
-        case .dead: "или прикидывается"
-        case .alive:"и шевелиться!"
-        case .life: "Ку-Ку!"
+        case .dead: return AppStrings.cellSubtitleDead
+        case .alive: return AppStrings.cellSubtitleAlive
+        case .life: return AppStrings.cellSubtitleLife
         }
     }
 }
